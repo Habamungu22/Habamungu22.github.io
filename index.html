@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Habamungu Batachoka – Haba Technologie</title>
 <meta name="description" content="Portfolio de Habamungu Batachoka, étudiant en informatique, créateur de contenus tech et fondateur de Haba Technologie.">
-<meta name="theme-color" content="#0B5FD8">
+<meta name="theme-color" content="#1F6FEB">
 <link rel="canonical" href="https://habamungu22.github.io/">
 <!-- Aperçu quand on partage le lien sur WhatsApp, Facebook, etc. -->
 <meta property="og:type" content="website">
@@ -39,12 +39,18 @@
 </script>
 <style>
 :root{
-  --bg:#F5F8FC; --panel:#FFFFFF; --ink:#0F2438; --muted:#51657A;
-  --line:#D5DFEA; --accent:#0B5FD8; --accent-ink:#FFFFFF; --ok:#1B7F4B;
-  color-scheme:light;
+  --bg:#EAF0F5; --panel:#FFFFFF; --ink:#12263A; --muted:#4A5E72;
+  --line:#B9C7D6; --accent:#1F6FEB; --accent-ink:#FFFFFF; --ok:#1B7F4B;
   box-sizing:border-box;
   padding-top:env(safe-area-inset-top,0px);
   padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1A27; --panel:#15263A; --ink:#E6EEF6; --muted:#9DB0C4;
+    --line:#2B4058; --accent:#5B9BFF; --accent-ink:#0E1A27; --ok:#4CC38A;
+    color-scheme:dark;
+  }
 }
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
@@ -118,14 +124,6 @@ footer{padding:2rem 0 3rem;color:var(--muted);border-top:1px solid var(--line);f
   nav a{margin:0 1rem 0 0}
 }
 
-/* Style clair et professionnel */
-header.top{border-bottom:1px solid var(--line);margin-bottom:.5rem}
-.photo{width:9.5rem;height:9.5rem;box-shadow:0 6px 18px rgba(15,36,56,.15)}
-.trace,.social a{box-shadow:0 6px 20px rgba(15,36,56,.07)}
-.trace{border-radius:1rem}
-section h2::after{content:"";display:block;width:3rem;height:4px;background:var(--accent);border-radius:2px;margin-top:.6rem}
-.btn{border-radius:.6rem;box-shadow:0 2px 8px rgba(11,95,216,.15)}
-.btn.alt{background:var(--panel)}
 </style>
 </head>
 <body>
